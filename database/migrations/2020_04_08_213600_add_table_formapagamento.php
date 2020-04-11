@@ -14,7 +14,7 @@ class AddTableFormapagamento extends Migration
     public function up()
     {
         Schema::create('forma_pagamento', function (Blueprint $table) {
-            $table->id('id');
+            $table->id();
             $table->string('nome', 100);
             $table->timestamps();
         });
