@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class FormapagamentoSeeder extends Seeder
+class FormaPagamentoSeeder extends Seeder
 {
     /**
      * Run the database seeds.

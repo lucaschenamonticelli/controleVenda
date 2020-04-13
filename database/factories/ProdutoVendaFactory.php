@@ -25,6 +25,7 @@ $factory->define(ProdutoVenda::class, function (Faker $faker) {
 
     return [
         'quantidade' => rand(1, 5), 
+        'valor' => rand(50, 300),
         'produto_id' => $produto_id,
         'venda_id' => $venda_id
     ];

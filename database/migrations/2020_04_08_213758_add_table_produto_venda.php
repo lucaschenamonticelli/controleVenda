@@ -16,6 +16,7 @@ class AddTableProdutoVenda extends Migration
         Schema::create('produto_venda', function (Blueprint $table) {
             $table->id();
             $table->integer('quantidade');
+            $table->float('valor');
             $table->unsignedBigInteger('produto_id');
             $table->unsignedBigInteger('venda_id');
             $table->foreign('produto_id')->references('id')->on('produto');

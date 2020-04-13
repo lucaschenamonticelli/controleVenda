@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -14,3 +16,12 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/login', 'LoginController@index');
+
+$router->get('/vendas', 'VendaController@index');
+$router->get('/vendas/{id}', 'VendaController@detalhe');
+
+$router->get('/produtos', 'ProdutoController@index');
+$router->get('/produtos/novo', 'ProdutoController@cadastro');
+$router->get('/produtos/editar/{id}', 'ProdutoController@cadastro');
