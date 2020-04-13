@@ -61,6 +61,9 @@ $app->singleton(
 
 $app->configure('app');
 
+$app->register(\Barryvdh\DomPDF\ServiceProvider::class);
+$app->configure('dompdf');
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
@@ -76,9 +79,9 @@ $app->configure('app');
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+$app->routeMiddleware([
+   'auth' => App\Http\Middleware\Authenticate::class,
+]);
 
 /*
 |--------------------------------------------------------------------------

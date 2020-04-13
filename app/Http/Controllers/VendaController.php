@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class VendaController extends Controller
 {
@@ -53,6 +54,31 @@ class VendaController extends Controller
                 venda.id = $id
             ORDER BY produto.id
         ");
-        return view('venda/detalhe', ['venda' => $venda]);
+        return view('venda/detalhe', ['venda' => $venda, 'id' => $id]);
+    }
+
+    public function gerarPdf($id){
+        $venda = DB::select("
+            SELECT
+                produto.nome AS produto,
+                DATE_FORMAT(venda.data, '%d/%m/%Y') AS data, 
+                forma_pagamento.nome AS pagamento,
+                produto_venda.quantidade,
+                produto_venda.valor
+            FROM
+                produto,
+                venda,
+                forma_pagamento,
+                produto_venda
+            WHERE
+                produto.id = produto_venda.produto_id AND
+                venda.id = produto_venda.venda_id AND
+                forma_pagamento.id = venda.formapagamento_id AND
+                venda.id = $id
+            ORDER BY produto.id
+        ");
+
+        $pdf = PDF::loadView('venda/download', ['venda' => $venda]);
+        return $pdf->setPaper('a4')->download('relatorio.pdf');
     }
 }

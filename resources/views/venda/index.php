@@ -41,6 +41,7 @@
                         <td><?php echo $value->formapgto ?></td>
                         <td>
                             <a href="<?php echo url('vendas') .'/'. $value->id ?>"><button class="btn btn-primary btn-sm">Ver Detalhes</button></a>
+                            <a href="<?php echo url('vendas/gerarPdf') .'/'. $value->id ?>"><button class="btn btn-danger btn-sm">Download</button></a>
                         </td>
                     </tr>
                     <?php

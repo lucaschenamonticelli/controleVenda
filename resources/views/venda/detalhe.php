@@ -25,6 +25,12 @@
     <div class="container-fluid" style="margin-top:80px">
         <h3>Venda Detalhe</h3>
         <p>
+            <a href="<?php echo url('vendas') ?>">Voltar</a>
+        </p>
+        <p>
+            <a href="<?php echo url('vendas/gerarPdf') .'/'. $id ?>"><button class="btn btn-danger btn-sm">Download</button></a>
+        </p>
+        <p>
             <strong>Data da Compra: </strong> <?php echo $venda[0]->data ?>
         </p>
         <p>

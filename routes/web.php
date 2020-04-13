@@ -21,6 +21,7 @@ $router->get('/login', 'LoginController@index');
 
 $router->get('/vendas', 'VendaController@index');
 $router->get('/vendas/{id}', 'VendaController@detalhe');
+$router->get('/vendas/gerarPdf/{id}', 'VendaController@gerarPdf');
 
 $router->get('/produtos', 'ProdutoController@index');
 $router->get('/produtos/novo', 'ProdutoController@cadastro');
