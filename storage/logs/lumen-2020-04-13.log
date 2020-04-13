@@ -1,0 +1,198 @@
+[2020-04-13 16:22:14] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(362): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(338): Laravel\Lumen\Application->callLumenControllerWithMiddleware(Object(App\Http\Controllers\ProdutoController), 'index', Array, Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProdutoController), 'index', Array)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#13 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#14 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(362): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(338): Laravel\\Lumen\\Application->callLumenControllerWithMiddleware(Object(App\\Http\\Controllers\\ProdutoController), 'index', Array, Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\ProdutoController), 'index', Array)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#13 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2020-04-13 16:37:40] local.ERROR: Error: Call to undefined method Laravel\Lumen\Routing\Router::middleware() in C:\xampp\htdocs\controleVenda\routes\web.php:28
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\bootstrap\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Routing\\Router::middleware() at C:\\xampp\\htdocs\\controleVenda\outes\\web.php:28)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2020-04-13 16:39:43] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(259): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#9 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#10 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(259): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2020-04-13 16:40:35] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(259): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#9 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#10 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(259): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2020-04-13 16:41:22] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\controleVenda\routes\web.php:35
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\routes\web.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\controleVenda\bootstrap\app.php(119): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\controleVenda\outes\\web.php:35)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\outes\\web.php(35): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 35, Array)
+#1 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(119): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2020-04-13 16:41:43] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(259): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#9 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#10 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(259): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2020-04-13 16:43:00] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(259): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#9 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#10 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(259): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2020-04-13 16:46:25] local.ERROR: Error: Function name must be a string in C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php:168
+Stack trace:
+#0 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\Lumen\Http\Request))
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\pipeline\Pipeline.php(103): Laravel\Lumen\Routing\Pipeline->Laravel\Lumen\Routing\{closure}(Object(Laravel\Lumen\Http\Request))
+#3 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(413): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(259): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#9 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#10 {main} {"exception":"[object] (Error(code: 0): Function name must be a string at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php:168)
+[stacktrace]
+#0 [internal function]: Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(413): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(259): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
