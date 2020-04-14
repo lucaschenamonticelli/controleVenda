@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get('/', 'LoginController@index');
+
+$router->group(['middleware' => 'login'], function () use ($router) {
+	$router->get('/login', 'LoginController@index');
+	$router->post('/logar', 'LoginController@logar');
+	$router->get('/sair', 'LoginController@sair');
 });
 
-$router->get('/login', 'LoginController@index');
-$router->post('/logar', 'LoginController@logar');
-
-$router->group(['middleware' => 'auth'], function () use ($router) {
+$router->group(['middleware' => 'logado'], function () use ($router) {
 	$router->get('/vendas', 'VendaController@index');
 	$router->get('/vendas/{id}', 'VendaController@detalhe');
 	$router->get('/vendas/gerarPdf/{id}', 'VendaController@gerarPdf');
@@ -28,5 +29,4 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
 	$router->get('/produtos', 'ProdutoController@index');
 	$router->get('/produtos/novo', 'ProdutoController@cadastro');
 	$router->get('/produtos/editar/{id}', 'ProdutoController@cadastro');
-    $router->get('/produtos/teste', 'ProdutoController@teste');
 });

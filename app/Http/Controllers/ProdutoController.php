@@ -14,7 +14,7 @@ class ProdutoController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
+        //
     }
 
     public function index(){
@@ -27,9 +27,5 @@ class ProdutoController extends Controller
 
     public function cadastro($id = null){
         return view('produto/cadastro');
-    }
-
-    public function teste(){
-        return "Teste Luca Monticelli";
     }
 }

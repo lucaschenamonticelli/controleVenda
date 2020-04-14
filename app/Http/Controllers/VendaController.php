@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Barryvdh\DomPDF\Facade as PDF;
+use Illuminate\Http\Request;
 
 class VendaController extends Controller
 {
@@ -12,9 +13,9 @@ class VendaController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Request $request)
     {
-        // $this->middleware('auth');
+        $this->middleware('logado');
     }
 
     public function index(){

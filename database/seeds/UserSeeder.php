@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
         DB::table('usuario')->insert([
             'nome' => 'Luca',
             'email' => 'lmonticelli@gmail.com',
-            'senha' => Hash::make('fastconnect')
+            'senha' => sha1('fastconnect')
         ]);
     }
 }

@@ -196,3 +196,463 @@ Stack trace:
 #9 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #10 {main}
 "} 
+[2020-04-13 16:52:26] local.ERROR: InvalidArgumentException: Auth driver [api] for guard [api] is not defined. in C:\xampp\htdocs\controleVenda\vendor\illuminate\auth\AuthManager.php:97
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\illuminate\auth\AuthManager.php(68): Illuminate\Auth\AuthManager->resolve('api')
+#1 C:\xampp\htdocs\controleVenda\vendor\illuminate\auth\AuthManager.php(307): Illuminate\Auth\AuthManager->guard()
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\support\Facades\Facade.php(261): Illuminate\Auth\AuthManager->__call('user', Array)
+#3 C:\xampp\htdocs\controleVenda\routes\web.php(24): Illuminate\Support\Facades\Facade::__callStatic('user', Array)
+#4 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#5 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#6 C:\xampp\htdocs\controleVenda\routes\web.php(36): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#7 C:\xampp\htdocs\controleVenda\bootstrap\app.php(119): require('C:\\xampp\\htdocs...')
+#8 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#10 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#11 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#12 {main} {"exception":"[object] (InvalidArgumentException(code: 0): Auth driver [api] for guard [api] is not defined. at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\auth\\AuthManager.php:97)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\auth\\AuthManager.php(68): Illuminate\\Auth\\AuthManager->resolve('api')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\auth\\AuthManager.php(307): Illuminate\\Auth\\AuthManager->guard()
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Auth\\AuthManager->__call('user', Array)
+#3 C:\\xampp\\htdocs\\controleVenda\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('user', Array)
+#4 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#6 C:\\xampp\\htdocs\\controleVenda\outes\\web.php(36): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#7 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(119): require('C:\\\\xampp\\\\htdocs...')
+#8 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#10 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#11 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+"} 
+[2020-04-13 17:03:02] local.ERROR: ParseError: syntax error, unexpected '&&' (T_BOOLEAN_AND) in C:\xampp\htdocs\controleVenda\app\Http\Controllers\LoginController.php:22
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(805): ReflectionClass->__construct('App\\Http\\Contro...')
+#4 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(687): Illuminate\Container\Container->build('App\\Http\\Contro...')
+#5 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(633): Illuminate\Container\Container->resolve('App\\Http\\Contro...', Array)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(267): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(311): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#14 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#15 {main} {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '&&' (T_BOOLEAN_AND) at C:\\xampp\\htdocs\\controleVenda\\app\\Http\\Controllers\\LoginController.php:22)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(805): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(687): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(633): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(267): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(311): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2020-04-13 17:26:28] local.ERROR: Error: Call to undefined method App\Http\Controllers\LoginController::jwt() in C:\xampp\htdocs\controleVenda\app\Http\Controllers\LoginController.php:24
+Stack trace:
+#0 [internal function]: App\Http\Controllers\LoginController->logar(Object(Laravel\Lumen\Http\Request))
+#1 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(592): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#6 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Illuminate\Container\Container->call(Array, Array)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\LoginController), 'logar', Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#13 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#14 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#15 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#16 {main} {"exception":"[object] (Error(code: 0): Call to undefined method App\\Http\\Controllers\\LoginController::jwt() at C:\\xampp\\htdocs\\controleVenda\\app\\Http\\Controllers\\LoginController.php:24)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\LoginController->logar(Object(Laravel\\Lumen\\Http\\Request))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\LoginController), 'logar', Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2020-04-13 18:00:22] local.ERROR: ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting end of file in C:\xampp\htdocs\controleVenda\routes\web.php:35
+Stack trace:
+#0 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#3 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting end of file at C:\\xampp\\htdocs\\controleVenda\outes\\web.php:35)
+[stacktrace]
+#0 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#3 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 18:01:18] local.ERROR: Error: Call to undefined method Laravel\Lumen\Routing\Router::middleware() in C:\xampp\htdocs\controleVenda\routes\web.php:33
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\bootstrap\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Routing\\Router::middleware() at C:\\xampp\\htdocs\\controleVenda\outes\\web.php:33)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2020-04-13 18:02:30] local.ERROR: Error: Call to undefined method Laravel\Lumen\Routing\Router::middleware() in C:\xampp\htdocs\controleVenda\routes\web.php:33
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\bootstrap\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\controleVenda\bootstrap\app.php(120): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Routing\\Router::middleware() at C:\\xampp\\htdocs\\controleVenda\outes\\web.php:33)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(119): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2020-04-13 19:51:11] local.ERROR: Error: Class 'Tymon\JWTAuth\Providers\JWTAuthServiceProvider' not found in C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php:190
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php(16): Laravel\Lumen\Application->register('Tymon\\JWTAuth\\P...')
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(103): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#3 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Error(code: 0): Class 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider' not found at C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php:190)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php(16): Laravel\\Lumen\\Application->register('Tymon\\\\JWTAuth\\\\P...')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(103): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#3 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 19:52:49] local.ERROR: Error: Class 'Tymon\JWTAuth\Providers\JWTAuthServiceProvider' not found in C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php:190
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php(16): Laravel\Lumen\Application->register('Tymon\\JWTAuth\\P...')
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#3 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Error(code: 0): Class 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider' not found at C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php:190)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php(16): Laravel\\Lumen\\Application->register('Tymon\\\\JWTAuth\\\\P...')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#3 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 19:55:33] local.ERROR: Error: Undefined constant 'Tymon\jwt' in C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#1 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#2 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#3 {main} {"exception":"[object] (Error(code: 0): Undefined constant 'Tymon\\jwt' at C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#3 {main}
+"} 
+[2020-04-13 19:56:19] local.ERROR: Error: Class '\Tymon\jwt-auth\src\Providers\LumenServiceProvider::class' not found in C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php:190
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php(16): Laravel\Lumen\Application->register('\\Tymon\\jwt-auth...')
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#3 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Error(code: 0): Class '\\Tymon\\jwt-auth\\src\\Providers\\LumenServiceProvider::class' not found at C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php:190)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php(16): Laravel\\Lumen\\Application->register('\\\\Tymon\\\\jwt-auth...')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#3 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 19:56:35] local.ERROR: Error: Undefined constant 'Tymon\jwt' in C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#1 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#2 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#3 {main} {"exception":"[object] (Error(code: 0): Undefined constant 'Tymon\\jwt' at C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#3 {main}
+"} 
+[2020-04-13 19:57:02] local.ERROR: Error: Undefined constant 'Tymon\jwt' in C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#1 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#2 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#3 {main} {"exception":"[object] (Error(code: 0): Undefined constant 'Tymon\\jwt' at C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#3 {main}
+"} 
+[2020-04-13 19:58:11] local.ERROR: Error: Class 'Tymon\JWTAuth\src\Providers\LumenServiceProvider' not found in C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php:190
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php(16): Laravel\Lumen\Application->register('Tymon\\JWTAuth\\s...')
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#3 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Error(code: 0): Class 'Tymon\\JWTAuth\\src\\Providers\\LumenServiceProvider' not found at C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php:190)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php(16): Laravel\\Lumen\\Application->register('Tymon\\\\JWTAuth\\\\s...')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#3 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 19:58:22] local.ERROR: Error: Undefined constant 'Tymon\jwt' in C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#1 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#2 C:\xampp\htdocs\controleVenda\public\index.php(14): require('C:\\xampp\\htdocs...')
+#3 {main} {"exception":"[object] (Error(code: 0): Undefined constant 'Tymon\\jwt' at C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#3 {main}
+"} 
+[2020-04-13 20:25:53] local.ERROR: ReflectionException: Class App\Http\Controllers\Request does not exist in C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php:164
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(121): Illuminate\Container\BoundMethod::addDependencyForCallParameter(Object(Laravel\Lumen\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(32): Illuminate\Container\BoundMethod::getMethodDependencies(Object(Laravel\Lumen\Application), Array, Array)
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#6 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(592): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Illuminate\Container\Container->call(Array, Array)
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\LoginController), 'logar', Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#13 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#14 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#16 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#17 {main} {"exception":"[object] (ReflectionException(code: 0): Class App\\Http\\Controllers\\Request does not exist at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php:164)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(121): Illuminate\\Container\\BoundMethod::addDependencyForCallParameter(Object(Laravel\\Lumen\\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(32): Illuminate\\Container\\BoundMethod::getMethodDependencies(Object(Laravel\\Lumen\\Application), Array, Array)
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Illuminate\\Container\\Container->call(Array, Array)
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\LoginController), 'logar', Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2020-04-13 20:27:11] local.ERROR: ReflectionException: Class App\Http\Controllers\Request does not exist in C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php:164
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(121): Illuminate\Container\BoundMethod::addDependencyForCallParameter(Object(Laravel\Lumen\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(32): Illuminate\Container\BoundMethod::getMethodDependencies(Object(Laravel\Lumen\Application), Array, Array)
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#6 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(592): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Illuminate\Container\Container->call(Array, Array)
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\LoginController), 'logar', Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#13 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#14 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#16 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#17 {main} {"exception":"[object] (ReflectionException(code: 0): Class App\\Http\\Controllers\\Request does not exist at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php:164)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(121): Illuminate\\Container\\BoundMethod::addDependencyForCallParameter(Object(Laravel\\Lumen\\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(32): Illuminate\\Container\\BoundMethod::getMethodDependencies(Object(Laravel\\Lumen\\Application), Array, Array)
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Illuminate\\Container\\Container->call(Array, Array)
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\LoginController), 'logar', Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2020-04-13 20:28:45] local.ERROR: ReflectionException: Class App\Http\Controllers\Request does not exist in C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php:164
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(121): Illuminate\Container\BoundMethod::addDependencyForCallParameter(Object(Laravel\Lumen\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(32): Illuminate\Container\BoundMethod::getMethodDependencies(Object(Laravel\Lumen\Application), Array, Array)
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#5 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#6 C:\xampp\htdocs\controleVenda\vendor\illuminate\container\Container.php(592): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#7 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(376): Illuminate\Container\Container->call(Array, Array)
+#8 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(342): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#9 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(316): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\LoginController), 'logar', Array)
+#10 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(278): Laravel\Lumen\Application->callControllerAction(Array)
+#11 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#13 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#14 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#16 C:\xampp\htdocs\controleVenda\public\index.php(28): Laravel\Lumen\Application->run()
+#17 {main} {"exception":"[object] (ReflectionException(code: 0): Class App\\Http\\Controllers\\Request does not exist at C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php:164)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(164): ReflectionParameter->getClass()
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(121): Illuminate\\Container\\BoundMethod::addDependencyForCallParameter(Object(Laravel\\Lumen\\Application), Object(ReflectionParameter), Array, Array)
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(32): Illuminate\\Container\\BoundMethod::getMethodDependencies(Object(Laravel\\Lumen\\Application), Array, Array)
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(376): Illuminate\\Container\\Container->call(Array, Array)
+#8 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(342): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(316): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\LoginController), 'logar', Array)
+#10 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(278): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 C:\\xampp\\htdocs\\controleVenda\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2020-04-13 21:17:18] local.ERROR: Error: Class 'Tymon\JWTAuth\Providers\LumenServiceProvider' not found in C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php:190
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\app\Providers\AppServiceProvider.php(16): Laravel\Lumen\Application->register('Tymon\\JWTAuth\\P...')
+#1 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Application.php(200): App\Providers\AppServiceProvider->register()
+#2 C:\xampp\htdocs\controleVenda\bootstrap\app.php(104): Laravel\Lumen\Application->register(Object(App\Providers\AppServiceProvider))
+#3 C:\xampp\htdocs\controleVenda\artisan(18): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Error(code: 0): Class 'Tymon\\JWTAuth\\Providers\\LumenServiceProvider' not found at C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php:190)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\app\\Providers\\AppServiceProvider.php(16): Laravel\\Lumen\\Application->register('Tymon\\\\JWTAuth\\\\P...')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Application.php(200): App\\Providers\\AppServiceProvider->register()
+#2 C:\\xampp\\htdocs\\controleVenda\\bootstrap\\app.php(104): Laravel\\Lumen\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#3 C:\\xampp\\htdocs\\controleVenda\\artisan(18): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2020-04-13 21:19:10] local.ERROR: Symfony\Component\Console\Exception\NamespaceNotFoundException: There are no commands defined in the "passport" namespace. in C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php:574
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(625): Symfony\Component\Console\Application->findNamespace('passport')
+#1 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('passport:instal...')
+#2 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\controleVenda\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"passport\" namespace. at C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php:574)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('passport')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('passport:instal...')
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\controleVenda\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2020-04-13 21:20:04] local.ERROR: Symfony\Component\Console\Exception\NamespaceNotFoundException: There are no commands defined in the "passport" namespace. in C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php:574
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(625): Symfony\Component\Console\Application->findNamespace('passport')
+#1 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('passport:instal...')
+#2 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\controleVenda\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"passport\" namespace. at C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php:574)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('passport')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('passport:instal...')
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\controleVenda\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2020-04-13 21:20:40] local.ERROR: Symfony\Component\Console\Exception\NamespaceNotFoundException: There are no commands defined in the "passport" namespace. in C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php:574
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(625): Symfony\Component\Console\Application->findNamespace('passport')
+#1 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('passport:instal...')
+#2 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\controleVenda\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"passport\" namespace. at C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php:574)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('passport')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('passport:instal...')
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\controleVenda\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2020-04-13 21:31:34] local.ERROR: Symfony\Component\Console\Exception\NamespaceNotFoundException: There are no commands defined in the "passport" namespace. in C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php:574
+Stack trace:
+#0 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(625): Symfony\Component\Console\Application->findNamespace('passport')
+#1 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('passport:instal...')
+#2 C:\xampp\htdocs\controleVenda\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\controleVenda\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\controleVenda\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\controleVenda\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"passport\" namespace. at C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php:574)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('passport')
+#1 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('passport:instal...')
+#2 C:\\xampp\\htdocs\\controleVenda\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\controleVenda\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\controleVenda\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\controleVenda\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 

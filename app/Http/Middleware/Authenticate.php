@@ -40,6 +40,10 @@ class Authenticate
             return redirect('login');
         }
 
+        if ($this->auth->guard($guard)->check()) {
+            return "Feito";
+        }
+
         return $next($request);
     }
 }

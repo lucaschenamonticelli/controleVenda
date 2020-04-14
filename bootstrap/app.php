@@ -81,7 +81,11 @@ $app->configure('dompdf');
 
 $app->routeMiddleware([
    'auth' => App\Http\Middleware\Authenticate::class,
+   'logado' => App\Http\Middleware\Logado::class,
+   'login' => App\Http\Middleware\Login::class,
 ]);
+
+// 'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth';
 
 /* $app->routeMiddleware([
     'auth' => App\Http\Middleware\JwtMiddleware::class,
